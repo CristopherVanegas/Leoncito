@@ -19,19 +19,36 @@ mat-toolbar {
 }
 
 .context {
+  width: 100%;
+  margin: 0 auto;
+}
+.info-text {
   width: 750px;
   margin: 0 auto;
 }
 
+.title-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 12px auto;
+}
+.title-image {
+  width: 250px;
+
+  height: auto;
+  border-radius: 2%;
+}
+
+
 @media (max-width: 450px) {
-  .context {
+  .info-text {
     width: 87%;
   }
 }
 
-.title-image {
-  width: 250px;
-  height: 100px;
-  margin: 0 auto;
-  border: 1 solid black;
+@media (min-width: 450px) {
+  .info-text {
+    width: 87%;
+  }
 }

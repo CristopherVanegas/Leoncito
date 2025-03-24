@@ -3,12 +3,23 @@
 </mat-toolbar>
 
 <div class="context">
-  <img class="title-image" src="../../../assets/media/LeoncitoSano.jpg" alt="Leoncio" />
-
-  <p>Leoncito presentó problemas renales y aunque intentamos con ayuda externa, no se presentó mejoría. Por lo que de urgencia fue internado.</p>
-  <p>El origna sangre y no puede defecar. 😓</p>
-  <p>Actualmente se encuentra en cuidado intensivo y con pronóstico reservado. <br> Los(as) veterinarios(as) le están haciendo tratamientos para rehidratarlo y sacarlo del cuadro anémico porque no quería comer y a penas bebía agua.</p>
-  <h4>A continuación se muestra día a día cómo va avanzando.</h4>
+  <picture class="title-image-container">
+    <img class="title-image" src="media/LeoncitoSano.jpg" alt="Leoncio" />
+  </picture>
+  <div class="info-text">
+    <p>
+      Leoncito presentó problemas renales y aunque intentamos con ayuda externa,
+      no se presentó mejoría. Por lo que de urgencia fue internado.
+    </p>
+    <p>El origna sangre y no puede defecar. 😓</p>
+    <p>
+      Actualmente se encuentra en cuidado intensivo y con pronóstico reservado.
+      <br />
+      Los(as) veterinarios(as) le están haciendo tratamientos para rehidratarlo
+      y sacarlo del cuadro anémico porque no quería comer y a penas bebía agua.
+    </p>
+    <h4>A continuación se muestra día a día cómo va avanzando.</h4>
+  </div>
 </div>
 
 <div class="grid-days">
@@ -16,7 +27,8 @@
     *ngFor="let dayData of days"
     [day]="dayData.day"
     [description]="dayData.description"
-    [mediaItems]="dayData.mediaItems">
+    [mediaItems]="dayData.mediaItems"
+  >
   </app-card-day>
 </div>
 <app-donar></app-donar>
