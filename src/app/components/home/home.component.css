@@ -44,6 +44,14 @@ mat-toolbar {
   .info-text {
     width: 87%;
   }
+  .grid-days {
+    display: grid;
+    /* auto-fit se encarga de "colapsar" columnas vacías y centrar mejor el contenido */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center; /* Centra las columnas cuando hay espacio sobrante */
+    padding: 3rem;
+  }
 }
 
 @media (min-width: 450px) {

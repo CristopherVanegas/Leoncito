@@ -3,15 +3,24 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* Fondo blanco + texto negro para el diálogo */
+/* Panel blanco con texto negro */
 .white-dialog-panel .mat-dialog-container {
   background-color: #ffffff !important;
   color: #000000 !important;
-  border-radius: 8px;
-  padding: 1.5rem;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+  padding: 1.5rem !important;
 }
 
-/* Opcional: elimina cualquier sombra oscura por defecto */
-.white-dialog-panel .mat-dialog-container.mat-dialog-container {
-  box-shadow: none !important;
+/* Si quieres ajustar el ancho fijo en desktop y full‑width en móvil */
+.white-dialog-panel .mat-dialog-container {
+  width: auto;
+  max-width: 100px;
+}
+
+@media (max-width: 600px) {
+  .white-dialog-panel .mat-dialog-container {
+    width: 100%;
+    max-width: none;
+  }
 }
