@@ -6,7 +6,7 @@ import { DonarDialogComponent } from '../donar-dialog/donar-dialog.component';
 @Component({
   selector: 'app-donar',
   standalone: true,
-  imports: [MatDialogModule, MatButtonModule, DonarDialogComponent],
+  imports: [MatDialogModule, MatButtonModule],
   templateUrl: './donar.component.html',
   styleUrls: ['./donar.component.css']
 })
@@ -17,7 +17,7 @@ export class DonarComponent {
     this.dialog.open(DonarDialogComponent, {
       panelClass: 'donar-dialog-panel',
       backdropClass: 'orange-backdrop',
-      disableClose: false  // Permite cerrar haciendo click fuera del diálogo
+      disableClose: false
     });
   }
 }
