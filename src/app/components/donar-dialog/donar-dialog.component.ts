@@ -10,7 +10,11 @@ import { CommonModule } from '@angular/common';
   template: `
     <div class="dialog-content">
       <h2>Datos para Donar</h2>
-      <p>Número de cuenta: <strong>1234-5678-9012-3456</strong></p>
+      <p><strong>Banco Guayaquil</strong></p>
+      <p>Nombre: <strong>Vanegas Santi Cristopher Julinho</strong></p>
+      <p>Ahorro: <strong>#0035084317</strong></p>
+      <p>Correo: <strong>cristopher.platzi&#64;gmail.com</strong></p>
+      <p>CI:<strong>1600940736</strong></p>
       <button mat-button color="primary" (click)="close()">Ok</button>
     </div>
   `,

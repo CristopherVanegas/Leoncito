@@ -12,7 +12,7 @@ import { DonarComponent } from "../donar/donar.component";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  title: string = 'Seguimiento del Gatito';
+  title: string = 'Seguimiento del Leoncito 🦁';
 
   // Datos de ejemplo para los días de seguimiento
   days = [

@@ -3,7 +3,10 @@
 </mat-toolbar>
 
 <div class="context">
-  <p>Aquí se muestra el seguimiento diario del estado del gatito hospitalizado.</p>
+  <p>Leoncito presentó problemas renales y aunque intentamos con ayuda externa, no se presentó mejoría. Por lo que de urgencia fue internado.</p>
+  <p>El origna sangre y no puede defecar. 😓</p>
+  <p>Actualmente se encuentra en cuidado intensivo y con pronóstico reservado. <br> Los(as) veterinarios(as) le están haciendo tratamientos para rehidratarlo y sacarlo del cuadro anémico porque no quería comer y a penas bebía agua.</p>
+  <h4>A continuación se muestra día a día cómo va avanzando.</h4>
 </div>
 
 <div class="grid-days">
@@ -13,5 +16,5 @@
     [description]="dayData.description"
     [mediaItems]="dayData.mediaItems">
   </app-card-day>
-  <app-donar></app-donar>
 </div>
+<app-donar></app-donar>

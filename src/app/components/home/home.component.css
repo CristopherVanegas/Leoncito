@@ -5,12 +5,26 @@
 
 .grid-days {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* auto-fit se encarga de "colapsar" columnas vacías y centrar mejor el contenido */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
+  justify-content: center; /* Centra las columnas cuando hay espacio sobrante */
   padding: 1rem;
-  justify-items: center; /* Centra horizontalmente el contenido */
-  align-items: start;    /* Puedes usar 'center' si quieres centrar verticalmente */
-  width: 70%;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.context {
+  width: 750px;
   margin: 0 auto;
 }
 
+@media (max-width: 450px) {
+  .context {
+    width: 87%;
+  }
+}
