@@ -18,7 +18,7 @@ export class HomeComponent {
   days = [
     {
       day: 'Día 1',
-      description: 'El gatito inicia su tratamiento hoy. Se muestra animado y con signos de recuperación.',
+      description: 'Leoncito inicia su tratamiento hoy. Se muestra deprimido y cansado. Tenemos fé en que pronto se recuperará.',
       mediaItems: [
         { type: 'image', url: 'media/Dia1/11.jpeg' },
         { type: 'image', url: 'media/Dia1/12.jpeg' },
@@ -29,7 +29,7 @@ export class HomeComponent {
     },
     {
       day: 'Día 2',
-      description: 'El gatito continúa mejorando. Se observan cambios positivos en su comportamiento.',
+      description: 'La doctora nos dijo que no se ha descompensado, está más alerta, ha mejorado un poco su hidratación y que fue capaz de comer un poquito de una barrita nutritiva de forma asistida. Esperemos que en los siguientes días mejore Leoncito.',
       mediaItems: [
         { type: 'image', url: 'media/Dia2/21.jpeg' },
         { type: 'video', url: 'media/Dia2/vid1.mp4' },
