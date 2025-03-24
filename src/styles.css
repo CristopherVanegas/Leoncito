@@ -12,11 +12,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding: 1.5rem !important;
 }
 
-/* Si quieres ajustar el ancho fijo en desktop y full‑width en móvil */
-.white-dialog-panel .mat-dialog-container {
-  width: auto;
-  max-width: 100px;
-}
 
 @media (max-width: 600px) {
   .white-dialog-panel .mat-dialog-container {
@@ -24,3 +19,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: none;
   }
 }
+
+.white-backdrop {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+}
+
+/* Aplica sólo a este diálogo gracias a panelClass */
+.white-dialog-panel .mat-dialog-container {
+  background-color: #ffffff !important;
+}
+
+/* Si quieres que el <div class="dialog-content"> también sea blanco */
+.white-dialog-panel .dialog-content {
+  background-color: #ffffff;
+}
+

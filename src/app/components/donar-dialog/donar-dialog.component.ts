@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
       <p>Ahorro: <strong>#0035084317</strong></p>
       <p>Correo: <strong>cristopher.platzi&#64;gmail.com</strong></p>
       <p>CI:<strong>1600940736</strong></p>
-      <button mat-button color="primary" (click)="close()">Ok</button>
+      <button mat-stroked-button color="primary" (click)="close()">Ok</button>
     </div>
   `,
   styles: [`
