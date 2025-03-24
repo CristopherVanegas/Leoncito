@@ -1,0 +1,24 @@
+<div class="card">
+  <h2>{{ day }}</h2>
+  <div class="slider">
+    <button class="slider-btn" (click)="prev()">&#10094;</button>
+
+    <ng-container *ngIf="mediaItems.length > 0; else noMedia">
+      <ng-container *ngIf="mediaItems[currentIndex].type === 'image'; else videoTemplate">
+        <img [src]="mediaItems[currentIndex].url" alt="Media">
+      </ng-container>
+      <ng-template #videoTemplate>
+        <video controls>
+          <source [src]="mediaItems[currentIndex].url" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+      </ng-template>
+    </ng-container>
+    <ng-template #noMedia>
+      <p>No hay media disponible</p>
+    </ng-template>
+
+    <button class="slider-btn" (click)="next()">&#10095;</button>
+  </div>
+  <p>{{ description }}</p>
+</div>

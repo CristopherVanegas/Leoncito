@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+</mat-toolbar>
+
+<div class="context">
+  <p>Aquí se muestra el seguimiento diario del estado del gatito hospitalizado.</p>
+</div>
+
+<div class="grid-days">
+  <app-card-day
+    *ngFor="let dayData of days"
+    [day]="dayData.day"
+    [description]="dayData.description"
+    [mediaItems]="dayData.mediaItems">
+  </app-card-day>
+</div>
