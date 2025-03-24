@@ -9,12 +9,6 @@
   transform: scale(1.1);
 }
 
-/* Estilo para el backdrop (fondo) del diálogo */
-.orange-backdrop {
-  background: rgba(255, 165, 0, 0.5); /* Naranja semitransparente */
-  backdrop-filter: blur(4px);
-}
-
 /* Opcional: estilos para el panel del diálogo */
 .donar-dialog-panel {
   border-radius: 8px;
