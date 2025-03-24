@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardDayComponent, MediaItem } from '../card-day/card-day.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DonarComponent } from "../donar/donar.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CardDayComponent, MatToolbarModule],
+  imports: [CommonModule, CardDayComponent, MatToolbarModule, DonarComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
