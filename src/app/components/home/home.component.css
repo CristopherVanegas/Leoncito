@@ -8,7 +8,9 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   padding: 1rem;
-  width: 1000px;
-  margin: 24px auto;
-  border: 1px solid black;
+  justify-items: center; /* Centra horizontalmente el contenido */
+  align-items: start;    /* Puedes usar 'center' si quieres centrar verticalmente */
+  width: 70%;
+  margin: 0 auto;
 }
+
