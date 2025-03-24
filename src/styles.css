@@ -2,3 +2,16 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Fondo blanco + texto negro para el diálogo */
+.white-dialog-panel .mat-dialog-container {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* Opcional: elimina cualquier sombra oscura por defecto */
+.white-dialog-panel .mat-dialog-container.mat-dialog-container {
+  box-shadow: none !important;
+}

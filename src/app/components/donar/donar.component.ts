@@ -15,7 +15,7 @@ export class DonarComponent {
 
   openDialog() {
     this.dialog.open(DonarDialogComponent, {
-      panelClass: 'donar-dialog-panel',
+      panelClass: 'white-dialog-panel',
       backdropClass: 'orange-backdrop',
       disableClose: false
     });
