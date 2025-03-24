@@ -20,8 +20,8 @@ export class HomeComponent {
       day: 'Día 1',
       description: 'El gatito inicia su tratamiento hoy. Se muestra animado y con signos de recuperación.',
       mediaItems: [
-        { type: 'image', url: 'assets/media/11.jpeg' },
-        { type: 'video', url: 'assets/media/Dia1/vid1.mp4' },
+        { type: 'image', url: '../../../assets/media/11.jpeg' },
+        { type: 'video', url: '../../../assets/media/Dia1/vid1.mp4' },
       ] as MediaItem[]
     },
     {

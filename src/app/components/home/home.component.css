@@ -28,3 +28,10 @@ mat-toolbar {
     width: 87%;
   }
 }
+
+.title-image {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1 solid black;
+}
