@@ -34,17 +34,16 @@ export class HomeComponent {
         { type: 'image', url: 'media/Dia2/21.jpeg' },
         { type: 'video', url: 'media/Dia2/vid1.mp4' },
         { type: 'image', url: 'media/Dia2/22.jpg' },
-        { type: 'image', url: 'media/Dia2/23.jpeg' },
+        // { type: 'image', url: 'media/Dia2/23.jpeg' },
         { type: 'image', url: 'media/Dia2/24.jpeg' },
         { type: 'image', url: 'media/Dia2/25.jpeg' },
         { type: 'image', url: 'media/Dia2/26.jpeg' },
         { type: 'image', url: 'media/Dia2/27.jpeg' },
-        { type: 'image', url: 'media/Dia2/28.jpeg' },
       ] as MediaItem[]
     },
     {
       day: 'Día 3',
-      description: 'El día de ayer no pude irlo a visitar pero fue mi mamá y mi hermana, Leoncito se animó para sobarse en el dedito de mi hermana. Se nota que la extrañaba, ya tenía un día sin verla. Se ve que eso lo animó. Va mejorando, está más alerta pero todavía tiene que salir bien del cuadro de como ingresó. La doctora me dijo que todavía orina un poco rojo pero ya no como antes. Sigue alimentándose por la sonda nasogastrica y le están hidratando por suero. Espero que pronto lo tengamos en casa. Muchas gracias a todos los que han donado y apoyado con las rifas, el gatito va mejorando gracias a su apoyo 😭',
+      description: 'El día de ayer no pude irlo a visitar pero fue mi mamá y mi hermana, Leoncito se animó para sobarse en el dedito de mi hermana. Se nota que la extrañaba, ya tenía un día sin verla. Va mejorando, está más alerta pero todavía tiene que salir del cuadro en como ingresó. La doctora dijo que todavía orina un poco rojo pero ya no como antes. Sigue alimentándose por la sonda nasogastrica y le están hidratando por suero. Espero que pronto lo tengamos en casa. Muchas gracias a todos los que han donado y apoyado con las rifas, el gatito va mejorando gracias a su apoyo 😭',
       mediaItems: [
         { type: 'image', url: 'media/Dia3/31.jpeg' },
         { type: 'image', url: 'media/Dia3/32.jpeg' },
