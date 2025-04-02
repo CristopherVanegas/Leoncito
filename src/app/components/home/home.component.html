@@ -1,11 +1,12 @@
-<mat-toolbar color="primary">
-  <span>{{ title }}</span>
-</mat-toolbar>
+<mat-card-header color="primary">
+  <h1>{{ title }}</h1>
+</mat-card-header>
 
 <div class="context">
   <picture class="title-image-container">
     <img class="title-image" src="media/LeoncitoSano.jpg" alt="Leoncio" />
   </picture>
+  <app-countdown></app-countdown>
   <div class="info-text">
     <p>
       Leoncito presentó problemas renales y aunque intentamos con ayuda externa,
@@ -23,7 +24,8 @@
 </div>
 
 <div class="grid-days">
-  <app-card-day class="card"
+  <app-card-day
+    class="card"
     *ngFor="let dayData of days"
     [day]="dayData.day"
     [description]="dayData.description"

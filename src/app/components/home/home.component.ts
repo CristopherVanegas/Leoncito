@@ -3,11 +3,20 @@ import { CommonModule } from '@angular/common';
 import { CardDayComponent, MediaItem } from '../card-day/card-day.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DonarComponent } from '../donar/donar.component';
+import { CountdownComponent } from '../../countdown/countdown.component';
+import { MatCardHeader } from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, CardDayComponent, MatToolbarModule, DonarComponent],
+  imports: [
+    CommonModule,
+    CardDayComponent,
+    MatToolbarModule,
+    DonarComponent,
+    CountdownComponent,
+    MatCardHeader,
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })

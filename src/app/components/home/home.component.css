@@ -1,3 +1,14 @@
+mat-card-header {
+  justify-content: center;
+  background-color: antiquewhite;
+  /* margin: 0px; */
+  padding: 0px;
+}
+h1 {
+  margin: 16px auto;
+  /* padding: 12px auto; */
+}
+
 .context {
   margin: 1rem;
   font-size: 1.2rem;
