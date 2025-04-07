@@ -1,10 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule } from '@angular/router';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-countdown',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule, RouterModule, MatButton],
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css'],
 })
@@ -15,6 +17,9 @@ export class CountdownComponent implements OnInit, OnDestroy {
   public secondsRemaining: number = 0;
   private intervalId: any;
 
+  openLink(): void {
+    window.open('https://www.youtube.com/live/5fSuSGFhjBg', '_blank');
+  }
   // Fecha objetivo: 6 de abril de 2024 a las 14:00 (hora Ecuador)
   public targetDate: Date = new Date('2025-04-06T14:00:00-05:00'); // Hora Ecuador (UTC -5)
 

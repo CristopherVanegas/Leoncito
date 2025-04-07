@@ -25,3 +25,8 @@ h2 {
 h3 {
   margin-top: 12px;
 }
+.no-link {
+  text-decoration: none; /* Eliminar subrayado */
+  color: inherit;
+  text-decoration: underline; /* Agregar subrayado */
+}
