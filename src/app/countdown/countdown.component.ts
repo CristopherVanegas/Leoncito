@@ -1,18 +1,22 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { MatCardModule } from '@angular/material/card'; // Asegúrate de importar MatCardModule
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-countdown',
-  standalone: true, // Usar esta propiedad si estás trabajando sin módulos
-  imports: [MatCardModule], // Importar MatCardModule para usar los componentes de Angular Material
+  standalone: true,
+  imports: [MatCardModule],
   templateUrl: './countdown.component.html',
   styleUrls: ['./countdown.component.css'],
 })
 export class CountdownComponent implements OnInit, OnDestroy {
-  public timeLeft: number = 0;
-  private intervalId: any;
-  public targetDate: Date = new Date('2025-04-06T00:00:00'); // Fecha de la rifa
   public daysRemaining: number = 0;
+  public hoursRemaining: number = 0;
+  public minutesRemaining: number = 0;
+  public secondsRemaining: number = 0;
+  private intervalId: any;
+
+  // Fecha objetivo: 6 de abril de 2024 a las 14:00 (hora Ecuador)
+  public targetDate: Date = new Date('2025-04-06T14:00:00-05:00'); // Hora Ecuador (UTC -5)
 
   constructor() {}
 
@@ -37,16 +41,32 @@ export class CountdownComponent implements OnInit, OnDestroy {
     const timeDiff = this.targetDate.getTime() - now.getTime();
 
     if (timeDiff > 0) {
-      this.daysRemaining = Math.floor(timeDiff / (1000 * 3600 * 24)); // Calcular días restantes
+      this.daysRemaining = Math.floor(timeDiff / (1000 * 3600 * 24)); // Días restantes
+      this.hoursRemaining = Math.floor(
+        (timeDiff % (1000 * 3600 * 24)) / (1000 * 3600)
+      ); // Horas restantes
+      this.minutesRemaining = Math.floor(
+        (timeDiff % (1000 * 3600)) / (1000 * 60)
+      ); // Minutos restantes
+      this.secondsRemaining = Math.floor((timeDiff % (1000 * 60)) / 1000); // Segundos restantes
     } else {
-      this.daysRemaining = 0; // Si ya pasó la fecha, mostramos 0 días
+      this.daysRemaining = 0;
+      this.hoursRemaining = 0;
+      this.minutesRemaining = 0;
+      this.secondsRemaining = 0;
       clearInterval(this.intervalId); // Detener la cuenta cuando llegue a la fecha
     }
   }
 
   get formattedTime(): string {
-    return `${this.daysRemaining} día${
-      this.daysRemaining !== 1 ? 's' : ''
-    } restante${this.daysRemaining !== 1 ? 's' : ''}`;
+    return `Días ${this.daysRemaining} | ${this.padTime(
+      this.hoursRemaining
+    )} Horas Minutos ${this.padTime(
+      this.minutesRemaining
+    )} Segundos ${this.padTime(this.secondsRemaining)}`;
+  }
+
+  private padTime(time: number): string {
+    return time < 10 ? `0${time}` : `${time}`;
   }
 }
